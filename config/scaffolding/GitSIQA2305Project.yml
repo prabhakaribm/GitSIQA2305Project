@@ -38,6 +38,16 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+- serviceName: project.gitsiqa2305.documenttypes:POrder
+  packages:
+  - name: GitSIQA2305Project
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.gitsiqa2305.integrations:DiscountCalculation
   packages:
   - name: GitSIQA2305Project
@@ -48,6 +58,20 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+- serviceName: project.gitsiqa2305.integrations:DocTypeValidate
+  packages:
+  - name: GitSIQA2305Project
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: pub.schema:validate
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2059
 - serviceName: project.gitsiqa2305.integrations:SFAccountCreate
   packages:
   - name: GitSIQA2305Project
