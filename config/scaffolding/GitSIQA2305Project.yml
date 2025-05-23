@@ -38,6 +38,16 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+- serviceName: project.gitsiqa2305.integrations:Copy_DiscountCalculation
+  packages:
+  - name: GitSIQA2305Project
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.gitsiqa2305.integrations:DiscountCalculation
   packages:
   - name: GitSIQA2305Project
