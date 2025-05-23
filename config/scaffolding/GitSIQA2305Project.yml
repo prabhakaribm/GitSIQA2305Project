@@ -7,3 +7,12 @@ packages:
   gitUrl: https://github.com/prabhakaribm
   gitUsername: prabhakaribm
   gitBranch: main
+services:
+- serviceName: project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:GetCustDiscount
+  packages:
+  - name: GitSIQA2305Project
+    version: "1.0"
+- serviceName: project.gitsiqa2305.integrations:DiscountCalculation
+  packages:
+  - name: GitSIQA2305Project
+    version: "1.0"
