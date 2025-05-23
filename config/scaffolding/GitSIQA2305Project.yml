@@ -68,24 +68,6 @@ services:
     wpmRegistry: licensed
   - name: WmSalesforceRESTProvider
     version: 10.7.0.0.187
-- serviceName: project.gitsiqa2305.integrations:TPP
-  packages:
-  - name: GitSIQA2305Project
-    version: "1.0"
-  - name: SSL_JDBC_Test
-    version: "1.0"
-  - name: WmJDBCAdapter
-    version: 10.3.0.0.34
-    wpmServer: https://packages.webmethods.io
-    wpmRegistry: licensed
-- serviceName: SSL_JDBC_Test.services:insert_ssl
-  packages:
-  - name: SSL_JDBC_Test
-    version: "1.0"
-  - name: WmJDBCAdapter
-    version: 10.3.0.0.34
-    wpmServer: https://packages.webmethods.io
-    wpmRegistry: licensed
 configurationVariables:
   ? artConnection.GitSIQA2305Project.project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2305.connectionSettings.networkProtocol
   : tcp
