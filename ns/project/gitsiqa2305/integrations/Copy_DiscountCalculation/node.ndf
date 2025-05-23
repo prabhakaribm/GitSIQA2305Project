@@ -79,8 +79,8 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="lastModifiedBy">flowqa</value>
-    <value name="lastModifiedDate">1747981684319</value>
+    <value name="lastModifiedBy">siqaadmin</value>
+    <value name="lastModifiedDate">1747981782819</value>
     <value name="displayName">Copy_DiscountCalculation</value>
     <value name="description">Discount Calculation Flow service based on zone</value>
     <array name="appList" type="record" depth="1">
@@ -115,12 +115,12 @@
         <value name="type">Adapters</value>
         <value name="version">1.0</value>
         <record name="connection" javaclass="com.wm.util.Values">
-          <value name="connectionName">DatabasenewAccForANZDiscount</value>
-          <value name="connectionType">webMethods Adapter for JDBC ExtendedConnection</value>
+          <value name="connectionName">Database_2305</value>
+          <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
           <null name="description"/>
         </record>
-        <value name="connectionNSName">project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:DatabasenewAccForANZDiscount</value>
-        <value name="connectionType">webMethods Adapter for JDBC ExtendedConnection</value>
+        <value name="connectionNSName">project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_2305</value>
+        <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
         <Boolean name="accountReferenceResolved">true</Boolean>
         <Boolean name="serviceReferenceResolved">true</Boolean>
         <array name="map" type="object" depth="1" javaclass="java.lang.Object">
@@ -143,18 +143,27 @@
         <value name="nodePathNew">0</value>
         <number name="lineNumberForDebug" type="Long">1</number>
         <value name="nodePathForDebug">0</value>
+        <Boolean name="hasBreakPoint">true</Boolean>
+      </record>
+      <record name="/1" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">Flow</value>
+          <value name="groupName">flow</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">debugLog</value>
+          <value name="serviceName">pub.flow:debugLog</value>
+          <value name="transformerSupport">false</value>
+        </record>
       </record>
     </record>
-    <record name="edgeServer" javaclass="com.wm.util.Values">
-      <value name="group">Default</value>
-      <value name="id">default</value>
-      <value name="name">Cloud Execution</value>
-    </record>
-    <value name="createdDate">1747981684319</value>
   </record>
   <value name="svc_in_validator_options">none</value>
   <value name="svc_out_validator_options">none</value>
-  <value name="auditoption">0</value>
+  <value name="auditoption">2</value>
   <null name="auditfields_input"/>
   <null name="auditfields_output"/>
   <record name="auditsettings" javaclass="com.wm.util.Values">
