@@ -12,6 +12,7 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 - name: SSL_JDBC_Test
+  version: "1.0"
   gitServerName: SIQAPsurGit
   gitUrl: https://github.com/prabhakarsag
   gitUsername: prabhakarsag
@@ -21,6 +22,8 @@ services:
   packages:
   - name: GitSIQA2305Project
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -28,6 +31,8 @@ services:
 - serviceName: project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:GetCustDiscount
   packages:
   - name: GitSIQA2305Project
+    version: "1.0"
+  - name: SSL_JDBC_Test
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
@@ -37,6 +42,46 @@ services:
   packages:
   - name: GitSIQA2305Project
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.gitsiqa2305.integrations:SFAccountCreate
+  packages:
+  - name: GitSIQA2305Project
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.testgit2205.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.operations.actions:SFAction1
+  packages:
+  - name: TestGit2205Project
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.187
+- serviceName: project.gitsiqa2305.integrations:TPP
+  packages:
+  - name: GitSIQA2305Project
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: SSL_JDBC_Test.services:insert_ssl
+  packages:
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -44,31 +89,31 @@ services:
 configurationVariables:
   ? artConnection.GitSIQA2305Project.project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2305.connectionSettings.networkProtocol
   : tcp
-  ? artConnection.GitSIQA2305Project.project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2305.connectionSettings.keyStore
-  : ""
   ? artConnection.GitSIQA2305Project.project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2305.connectionSettings.portNumber
   : "1433"
   ? artConnection.GitSIQA2305Project.project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2305.connectionSettings.databaseName
   : SIQACloud
-  ? artConnection.GitSIQA2305Project.project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2305.connectionSettings.otherProperties
-  : loginTimeout=60;driverType=thin;
   ? artConnection.GitSIQA2305Project.project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2305.connectionSettings.serverName
   : 9.60.195.99
   ? artConnection.GitSIQA2305Project.project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2305.connectionSettings.user
   : sa
   ? artConnection.GitSIQA2305Project.project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2305.connectionEnabled
   : "false"
-  ? artConnection.GitSIQA2305Project.project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2305.connectionSettings.datasourceClass
-  : com.wm.dd.jdbcx.sqlserver.SQLServerDataSource
   ? artConnection.GitSIQA2305Project.project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2305.connectionSettings.trustStore
   : ""
-  ? artConnection.GitSIQA2305Project.project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2305.connectionManagerSettings.poolable
-  : "false"
-  ? artConnection.GitSIQA2305Project.project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2305.connectionSettings.driverType
-  : Progress® DataDirect®
   ? artConnection.GitSIQA2305Project.project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2305.connectionSettings.dbType
   : MSSQL
   ? artConnection.GitSIQA2305Project.project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2305.connectionSettings.password
   : "{AES}X4QCAWgjWkTdMQvFA5XaqGmK1wuN3U1rA1B0VhuZoUw="
+  ? artConnection.GitSIQA2305Project.project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2305.connectionSettings.keyStore
+  : ""
+  ? artConnection.GitSIQA2305Project.project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2305.connectionSettings.otherProperties
+  : loginTimeout=60;driverType=thin;
+  ? artConnection.GitSIQA2305Project.project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2305.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.sqlserver.SQLServerDataSource
+  ? artConnection.GitSIQA2305Project.project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2305.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.GitSIQA2305Project.project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2305.connectionSettings.driverType
+  : Progress® DataDirect®
   ? artConnection.GitSIQA2305Project.project.gitsiqa2305.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2305.connectionSettings.transactionType
   : NO_TRANSACTION
